@@ -8,9 +8,9 @@ import "bootswatch/journal/bootstrap.css";
 
 const PLACES = [
   { name: "Palo Alto", zip: "94303" },
-  { name: "San Jose", zip: "94088" },
+  { name: "San Jose",   zip: "94088" },
   { name: "Santa Cruz", zip: "95062" },
-  { name: "Honolulu", zip: "96803" },
+  { name: "Honolulu",   zip: "96803" },
   { name: "Coppell, Tx", zip: "75019" },
 ];
 
