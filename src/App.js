@@ -11,7 +11,7 @@ const PLACES = [
   { name: "San Jose", zip: "94088" },
   { name: "Santa Cruz", zip: "95062" },
   { name: "Honolulu", zip: "96803" },
-  { name: "Coppell", zip: "75019" },
+  { name: "Coppell, Tx", zip: "75019" },
 ];
 
 class WeatherDisplay extends Component {
@@ -23,8 +23,9 @@ class WeatherDisplay extends Component {
   }
   componentDidMount() {
     const zip = this.props.zip;
+	// cost URL = "http://api.openweathermap.org/data/2.5/weather?q={city name},{country code}
     const URL = "http://api.openweathermap.org/data/2.5/weather?q=" +
-      zip +
+      zip + ",us" +
       "&appid=b1b35bba8b434a28a0be2a3e1071ae5b&units=imperial";
     fetch(URL).then(res => res.json()).then(json => {
       this.setState({ weatherData: json });
