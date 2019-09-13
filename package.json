@@ -4,12 +4,12 @@
   "private": true,
   "homepage": "https://akoranne.github.com/react-weather",
   "dependencies": {
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^3.4.1",
     "bootswatch": "^3.3.7",
     "react": "^15.3.0",
     "react-bootstrap": "^0.31.5",
     "react-dom": "^15.3.0",
-    "react-scripts": "1.0.14"
+    "react-scripts": "^3.1.1"
   },
   "scripts": {
     "predeploy": "npm run build",
@@ -18,5 +18,17 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
